@@ -12,9 +12,10 @@ El script cuenta con las siguientes opciones.
 
 **2**. Instalar **Portainer** (Requiere el token Ngrok para hacer un puente ya que el acceso desde google cloud no deja iniciar sesión).
 
-*3*. Iniciar Apache Aguacate en el **Puerto 8080** (Usa Docker).
+**3**. Iniciar Apache Aguacate en el **Puerto 8080** (Usa Docker).
 
 ![enter image description here](https://i.ibb.co/0jLDK6N/1.jpg)
+![enter image description here](https://i.ibb.co/V9KvgtF/2.jpg)
 
 # Uso del Script
 

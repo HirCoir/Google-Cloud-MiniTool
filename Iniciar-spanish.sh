@@ -60,7 +60,7 @@ sudo docker rm $(docker ps -a -q)
 else
    echo "Sin contenedores"
 fi
-sudo docker run- d -p 8080:3000 linuxserver/webtop:ubuntu-kde
+sudo docker run -d -p 8080:3000 linuxserver/webtop:ubuntu-kde
         break;;
         [3]* ) 
 if [ -d "$CONTAINERS" ]

@@ -14,6 +14,7 @@ El script cuenta con las siguientes opciones.
 
 *3*. Iniciar Apache Aguacate en el **Puerto 8080** (Usa Docker).
 
+![enter image description here](https://i.ibb.co/0jLDK6N/1.jpg)
 
 # Uso del Script
 

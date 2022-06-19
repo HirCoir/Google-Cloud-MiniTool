@@ -44,32 +44,32 @@ if [ -d "$CONTAINERS" ]
 then
 echo "Containers found."
 echo "Eliminating containers..."
-sudo docker stop $(docker ps -a -q)
-sudo docker rm $(docker ps -a -q)
+docker stop $(docker ps -a -q)
+docker rm $(docker ps -a -q)
 else
    echo "Without containers"
 fi
-sudo docker run -d -p 8080:3000 linuxserver/webtop:ubuntu-xfce
+docker run -d -p 8080:3000 linuxserver/webtop:ubuntu-xfce
         break;;
         [2]* )
 if [ -d "$CONTAINERS" ]
 then
 echo "Containers found."
 echo "Eliminating containers..."
-sudo docker stop $(docker ps -a -q)
-sudo docker rm $(docker ps -a -q)
+docker stop $(docker ps -a -q)
+docker rm $(docker ps -a -q)
 else
    echo "Without containers"
 fi
-sudo docker run -d -p 8080:3000 linuxserver/webtop:ubuntu-kde
-        break;;
+docker run -d -p 8080:3000 linuxserver/webtop:ubuntu-kde
+break;;
         [3]* ) 
 if [ -d "$CONTAINERS" ]
 then
 echo "Containers found."
 echo "Eliminating containers..."
-sudo docker stop $(docker ps -a -q)
-sudo docker rm $(docker ps -a -q)
+stop $(docker ps -a -q)
+rm $(docker ps -a -q)
 else
    echo "Without containers"
 fi
@@ -80,8 +80,8 @@ if [ -d "$CONTAINERS" ]
 then
 echo "Containers found."
 echo "Eliminating containers..."
-sudo docker stop $(docker ps -a -q)
-sudo docker rm $(docker ps -a -q)
+docker stop $(docker ps -a -q)
+docker rm $(docker ps -a -q)
 else
    echo "Without containers"
 fi
@@ -92,12 +92,12 @@ if [ -d "$CONTAINERS" ]
 then
 echo "Containers found."
 echo "Eliminating containers..."
-sudo docker stop $(docker ps -a -q)
-sudo docker rm $(docker ps -a -q)
+docker stop $(docker ps -a -q)
+docker rm $(docker ps -a -q)
 else
    echo "Without containers"
 fi
-sudo docker run -d -p 8080:3000 linuxserver/webtop:ubuntu-icewm
+docker run -d -p 8080:3000 linuxserver/webtop:ubuntu-icewm
 break;;
         [6]* ) exit; break;;        
         * ) exit;;
@@ -117,14 +117,14 @@ else
 fi
 echo "Installing Portainer..."
 sleep 1
-sudo docker volume create portainer_data
-sudo docker run -d -p 9000:9000 --name portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce:latest
+docker volume create portainer_data
+docker run -d -p 9000:9000 --name portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce:latest
 echo "Downloading Ngrok"
 ls /home/
-sudo rm ngrok-stable-linux-amd64.deb
-sudo wget https://raw.githubusercontent.com/HirCoir/Ngrok/main/ngrok-stable-linux-amd64.deb
+rm ngrok-stable-linux-amd64.deb
+wget https://raw.githubusercontent.com/HirCoir/Ngrok/main/ngrok-stable-linux-amd64.deb
 echo "Ngrok Token Format: XXXXXXXXXXXXXXXXXXXXXXXXXXX_XXXXXXXXXXXXXXXXXXXXX"
-sudo dpkg -i ngrok-stable-linux-amd64.deb
+dpkg -i ngrok-stable-linux-amd64.deb
 echo "Get your Token from the following URL: https://dashboard.ngrok.com/get-started/your-authtoken"
 
 read -p "Enter ONLY YOUR NGROK TOKEN: " ngrok_token
@@ -142,20 +142,20 @@ if [ -d "$CONTAINERS" ]
 then
 echo "Containers found."
 echo "Eliminating containers..."
-sudo docker stop $(docker ps -a -q)
-sudo docker rm $(docker ps -a -q)
+docker stop $(docker ps -a -q)
+docker rm $(docker ps -a -q)
 else
    echo "Without containers"
 fi
-sudo docker run -d -p 8080:8080 --name Guacamole -v /config -v /portainer/Files/AppData/Config/Guacamole oznu/guacamole:latest
+docker run -d -p 8080:8080 --name Guacamole -v /config -v /portainer/Files/AppData/Config/Guacamole oznu/guacamole:latest
 break;;
 [4]* )
 if [ -d "$CONTAINERS" ]
 then
 echo "Containers found."
 echo "Eliminating containers..."
-sudo docker stop $(docker ps -a -q)
-sudo docker rm $(docker ps -a -q)
+docker stop $(docker ps -a -q)
+docker rm $(docker ps -a -q)
 else
    echo "Error.. No container.."
 fi

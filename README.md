@@ -16,6 +16,7 @@ El script cuenta con las siguientes opciones.
 
 ![enter image description here](https://i.ibb.co/yYdWNZq/1.jpg)
 ![enter image description here](https://i.ibb.co/02zmH21/2.jpg)
+![enter image description here](https://github.com/HirCoir/Google-Cloud-MiniTool/raw/main/Images/Ubuntu-Desktop.gif)
 
 # Uso del Script
 

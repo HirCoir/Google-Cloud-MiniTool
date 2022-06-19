@@ -2,11 +2,11 @@
 
 El script cuenta con las siguientes opciones. 
 **1**. Crear contenedores de Ubuntu con los entornos:
-**XFCE**
-**KDE**
-**Mate**
-**Openbox**
-**IceWM**
+**XFCE**,
+**KDE**,
+**Mate**,
+**Openbox**,
+**IceWM**.
 
 **2**. Instalar **Portainer** (Requiere el token Ngrok para hacer un puente ya que el acceso desde google cloud no deja iniciar sesión)
 

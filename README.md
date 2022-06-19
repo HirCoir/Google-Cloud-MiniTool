@@ -19,7 +19,7 @@ El script cuenta con las siguientes opciones.
 
 # Uso del Script
 
-    ls /home/ && wget https://raw.githubusercontent.com/HirCoir/Google-Cloud-MiniTool/main/Iniciar-spanish.sh && chmod 777 Iniciar-spanish.sh && bash Iniciar-spanish.sh
+    ls /home/ && wget https://raw.githubusercontent.com/HirCoir/Google-Cloud-MiniTool/main/Docker.sh && chmod 777 Docker.sh && bash Docker.sh
 
 
 # English
@@ -41,4 +41,4 @@ The script has the following options.
 
 # Script Usage
 
-    ls /home/ && wget https://raw.githubusercontent.com/HirCoir/Google-Cloud-MiniTool/main/Iniciar-spanish.sh && chmod 777 Iniciar-spanish.sh && bash Iniciar-spanish.sh
+    ls /home/ && wget https://raw.githubusercontent.com/HirCoir/Google-Cloud-MiniTool/main/Docker.sh && chmod 777 Docker.sh && bash Docker.sh

@@ -135,7 +135,7 @@ echo
 echo "Do not close this window because the tunnel will close."
 ls /home/
 sudo ngrok authtoken $ngrok_token
-sudo ngrok tcp 9000
+sudo ngrok http 9000
 break;;
 [3]* )
 if [ -d "$CONTAINERS" ]

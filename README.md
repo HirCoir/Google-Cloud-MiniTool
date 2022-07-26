@@ -37,7 +37,7 @@ The script has the following options.
 
 **2**. Install **Portainer** (Requires Ngrok token to bridge since access from google cloud doesnt allow login).
 
-*3*. Start Apache Aguacate on **Port 8080** (Use Docker).
+*3*. Start Apache Guacamole on **Port 8080** (Use Docker).
 
 
 # Script Usage
